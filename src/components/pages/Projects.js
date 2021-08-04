@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Resume() {
+export default function Project() {
     return (
         <div className="pages container-fluid">
-            <h2> Resume Info</h2>
+            <h2> Project Info</h2>
         </div>
     );
 }
