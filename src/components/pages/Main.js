@@ -3,6 +3,7 @@ import About from './About';
 import Resume from './Resume';
 import Contact from './Contact';
 import Project from './Projects';
+import "../styles/home.css";
 
 function Main() {
     return (
