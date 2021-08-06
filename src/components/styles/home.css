@@ -33,3 +33,9 @@ h2 {
   margin: 2rem 1rem;
   padding: 1rem 1rem;
 }
+
+.project {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+}
