@@ -6,7 +6,7 @@ import Project from './Projects';
 
 function Main() {
     return (
-        <div>
+        <div className="mainBody">
             <About />
             <Contact />
             <Resume />
