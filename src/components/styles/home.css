@@ -99,3 +99,9 @@ body {
   margin: 0px;
   text-align: center;
 }
+
+.img-thumbnail {
+  width: 500px !important;
+  height: 300px !important;
+  object-fit: cover;
+}

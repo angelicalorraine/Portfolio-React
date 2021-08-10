@@ -1,6 +1,14 @@
 import React from "react";
 import study from "../assets/StudyBuddy.png";
 import favor from "../assets/FavorTrader.png";
+import budget from "../assets/BudgetTracker.png";
+import note from "../assets/NoteTaker.png";
+import fitness from "../assets/FitnessChart.png";
+import team from "../assets/TeamProfile.png";
+
+
+
+
 import "../styles/home.css";
 
 export default function Project() {
@@ -65,19 +73,18 @@ export default function Project() {
 
 
             <div className="container d-flex justify-content-center ">
-                <div className="row row-cols-1 row-cols-md-3 g-4">
+                <div className="row row-cols-1 row-cols-md-2 g-4">
 
 
                     <div className="col">
                         <div className="card h-100 align-items-center ">
-                            <img src="Images/ForeWeather (1).png" className="card-img-top img-thumbnail" alt="..." />
+                            <img src={budget} className="card-img-top img-thumbnail" alt="..." />
                             <div className="card-body">
-                                <h5 className="card-title">Fore-Weather</h5>
-                                <p className="card-text">This homeworks challenge was to build a weather dashboard that will run in the browser
-                                    and feature dynamically updated HTML and CSS. The main aspect of this assignment was accessing a Server-side API to retrieve data, which was OpenWeather API</p>
-                                <a href="https://github.com/angelicalorraine/Fore-Weather" target="_blank"
+                                <h5 className="card-title">Budget Tracker</h5>
+
+                                <a href="https://github.com/angelicalorraine/Budget-Tracker" target="_blank"
                                     className="btn btn-outline-secondary">Repository</a>
-                                <a href="https://angelicalorraine.github.io/Fore-Weather/" target="_blank" className="btn btn-outline-info">Launch App</a>
+                                <a href="https://budget-tracker-alh.herokuapp.com/" target="_blank" className="btn btn-outline-info">Launch App</a>
                             </div>
                         </div>
                     </div>
@@ -86,14 +93,13 @@ export default function Project() {
 
                     <div className="col">
                         <div className="card h-100 align-items-center">
-                            <img src="Images/InQUIZition.png" className="card-img-top img-thumbnail" alt="..." />
+                            <img src={note} className="card-img-top img-thumbnail" alt="..." />
                             <div className="card-body">
-                                <h5 className="card-title">In-QUIZ-ition</h5>
-                                <p className="card-text">This assignment was to build a timed coding quiz with multiple-choice questions. This app
-                                    will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code. Also saving your score and initials in the local storage.</p>
-                                <a href="https://github.com/angelicalorraine/In-QUIZ-ition" target="_blank"
+                                <h5 className="card-title">Note Taker</h5>
+
+                                <a href="https://github.com/angelicalorraine/Note-Taker" target="_blank"
                                     className="btn btn-outline-secondary">Repository</a>
-                                <a href="https://angelicalorraine.github.io/In-QUIZ-ition/" target="_blank"
+                                <a href="https://note-taker-alh.herokuapp.com/" target="_blank"
                                     className="btn btn-outline-info">Launch App</a>
                             </div>
                         </div>
@@ -102,14 +108,28 @@ export default function Project() {
 
                     <div className="col">
                         <div className="card h-100 align-items-center">
-                            <img src="Images/daily-sched.png" className="card-img-top img-thumbnail" alt="..." />
+                            <img src={fitness} className="card-img-top img-thumbnail" alt="..." />
                             <div className="card-body">
-                                <h5 className="card-title">Daily Agenda</h5>
-                                <p className="card-text">This is a creation of a simple calendar application that allows a user to save events for
-                                    each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.</p>
-                                <a href="https://github.com/angelicalorraine/Angelicas-Agenda" target="_blank"
+                                <h5 className="card-title">Workout Tracker</h5>
+
+                                <a href="https://github.com/angelicalorraine/Workout-Tracker" target="_blank"
                                     className="btn btn-outline-secondary">Repository</a>
-                                <a href="https://angelicalorraine.github.io/Angelicas-Agenda/" target="_blank"
+                                <a href="https://workout-tracker-alh.herokuapp.com/" target="_blank"
+                                    className="btn btn-outline-info">Launch App</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div className="col">
+                        <div className="card h-100 align-items-center">
+                            <img src={team} className="card-img-top img-thumbnail" alt="..." />
+                            <div className="card-body">
+                                <h5 className="card-title">Team Profile</h5>
+
+                                <a href="https://github.com/angelicalorraine/Team-Profile-Generator" target="_blank"
+                                    className="btn btn-outline-secondary">Repository</a>
+                                <a href="https://angelicalorraine.github.io/Team-Profile-Generator/" target="_blank"
                                     className="btn btn-outline-info">Launch App</a>
                             </div>
                         </div>
