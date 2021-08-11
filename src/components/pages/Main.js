@@ -9,9 +9,9 @@ function Main() {
     return (
         <div className="mainBody">
             <About />
-            <Contact />
             <Resume />
             <Project />
+            <Contact />
         </div>
     );
 }

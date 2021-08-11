@@ -46,9 +46,6 @@ h2 {
   margin: 5px;
 }
 
-.studydesc {
-  margin-left: 20px;
-}
 .icons {
   display: flex;
   justify-content: center;
@@ -56,7 +53,7 @@ h2 {
 }
 
 .card {
-  padding: 3px;
+  padding: 2px;
   text-align: center;
   line-height: 20px;
   transition: all 0.5s ease-in-out;
@@ -101,7 +98,19 @@ body {
 }
 
 .img-thumbnail {
-  width: 500px !important;
-  height: 300px !important;
+  width: 310px !important;
+  height: 200px !important;
   object-fit: cover;
+}
+
+.gel {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.aboutme {
+  font-size: 23px;
+  line-height: 2rem;
+  padding: 1rem;
 }

@@ -6,14 +6,15 @@ import note from "../assets/NoteTaker.png";
 import fitness from "../assets/FitnessChart.png";
 import team from "../assets/TeamProfile.png";
 
-
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 
 import "../styles/home.css";
 
 export default function Project() {
     return (
-        <div className="container">
+        <div className="container-fluid">
             <div id="projectCont" className="container d-flex justify-content-center">
                 <div className="row projects ">
                     <h2> Project Info</h2>
@@ -72,69 +73,49 @@ export default function Project() {
 
 
 
-            <div className="container d-flex justify-content-center ">
-                <div className="row row-cols-1 row-cols-md-2 g-4">
 
 
-                    <div className="col">
-                        <div className="card h-100 align-items-center ">
-                            <img src={budget} className="card-img-top img-thumbnail" alt="..." />
-                            <div className="card-body">
-                                <h5 className="card-title">Budget Tracker</h5>
+            <div className="container-fluid d-flex justify-content-center ">
+                <div className="row row-cols-md-2 g-4">
+                    <Card style={{ width: '20rem' }}>
+                        <Card.Img variant="top" className="card-img-top img-thumbnail" src={budget} />
+                        <Card.Body>
+                            <Card.Title>Budget Tracker</Card.Title>
 
-                                <a href="https://github.com/angelicalorraine/Budget-Tracker" target="_blank"
-                                    className="btn btn-outline-secondary">Repository</a>
-                                <a href="https://budget-tracker-alh.herokuapp.com/" target="_blank" className="btn btn-outline-info">Launch App</a>
-                            </div>
-                        </div>
-                    </div>
+                            <Button variant="outline-info"> <a href="https://github.com/angelicalorraine/Budget-Tracker" target="_blank">Repository</a></Button>
+                            <Button variant="outline-info"> <a href="https://budget-tracker-alh.herokuapp.com/" target="_blank">Launch</a></Button>
+                        </Card.Body>
+                    </Card>
 
+                    <Card style={{ width: '20rem' }}>
+                        <Card.Img variant="top" className="card-img-top img-thumbnail" src={note} />
+                        <Card.Body>
+                            <Card.Title>Budget Tracker</Card.Title>
 
+                            <Button variant="outline-info"> <a href="https://github.com/angelicalorraine/Budget-Tracker" target="_blank">Repository</a></Button>
+                            <Button variant="outline-info"> <a href="https://budget-tracker-alh.herokuapp.com/" target="_blank">Launch</a></Button>
+                        </Card.Body>
+                    </Card>
 
-                    <div className="col">
-                        <div className="card h-100 align-items-center">
-                            <img src={note} className="card-img-top img-thumbnail" alt="..." />
-                            <div className="card-body">
-                                <h5 className="card-title">Note Taker</h5>
+                    <Card style={{ width: '20rem' }}>
+                        <Card.Img variant="top" className="card-img-top img-thumbnail" src={fitness} />
+                        <Card.Body>
+                            <Card.Title>Budget Tracker</Card.Title>
 
-                                <a href="https://github.com/angelicalorraine/Note-Taker" target="_blank"
-                                    className="btn btn-outline-secondary">Repository</a>
-                                <a href="https://note-taker-alh.herokuapp.com/" target="_blank"
-                                    className="btn btn-outline-info">Launch App</a>
-                            </div>
-                        </div>
-                    </div>
+                            <Button variant="outline-info"> <a href="https://github.com/angelicalorraine/Budget-Tracker" target="_blank">Repository</a></Button>
+                            <Button variant="outline-info"> <a href="https://budget-tracker-alh.herokuapp.com/" target="_blank">Launch</a></Button>
+                        </Card.Body>
+                    </Card>
 
+                    <Card style={{ width: '20rem' }}>
+                        <Card.Img variant="top" className="card-img-top img-thumbnail" src={team} />
+                        <Card.Body>
+                            <Card.Title>Budget Tracker</Card.Title>
 
-                    <div className="col">
-                        <div className="card h-100 align-items-center">
-                            <img src={fitness} className="card-img-top img-thumbnail" alt="..." />
-                            <div className="card-body">
-                                <h5 className="card-title">Workout Tracker</h5>
-
-                                <a href="https://github.com/angelicalorraine/Workout-Tracker" target="_blank"
-                                    className="btn btn-outline-secondary">Repository</a>
-                                <a href="https://workout-tracker-alh.herokuapp.com/" target="_blank"
-                                    className="btn btn-outline-info">Launch App</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div className="col">
-                        <div className="card h-100 align-items-center">
-                            <img src={team} className="card-img-top img-thumbnail" alt="..." />
-                            <div className="card-body">
-                                <h5 className="card-title">Team Profile</h5>
-
-                                <a href="https://github.com/angelicalorraine/Team-Profile-Generator" target="_blank"
-                                    className="btn btn-outline-secondary">Repository</a>
-                                <a href="https://angelicalorraine.github.io/Team-Profile-Generator/" target="_blank"
-                                    className="btn btn-outline-info">Launch App</a>
-                            </div>
-                        </div>
-                    </div>
-
+                            <Button variant="outline-info"> <a href="https://github.com/angelicalorraine/Budget-Tracker" target="_blank">Repository</a></Button>
+                            <Button variant="outline-info"> <a href="https://budget-tracker-alh.herokuapp.com/" target="_blank">Launch</a></Button>
+                        </Card.Body>
+                    </Card>
 
                 </div>
 
