@@ -32,8 +32,7 @@ h2 {
 }
 
 .pages {
-  margin: 2rem 2rem 2rem 2rem;
-  padding: 1rem 1rem;
+  margin: 0px;
 }
 
 .project {
@@ -105,19 +104,32 @@ body {
 }
 
 .gel {
-  width: 350px;
-  height: 450px;
+  width: 430px;
+  height: 550px;
   object-fit: cover;
 }
 
 .aboutme {
   font-size: 23px;
   line-height: 3rem;
-  padding: 3rem;
+  max-width: 45rem;
   justify-content: end;
 }
 
-.about {
+.leftmain {
+  display: flex;
+
+  align-items: center;
+}
+
+/* Personal information*/
+
+.rightmain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
 }
 
 .skillGroup {
