@@ -114,3 +114,32 @@ body {
   line-height: 2rem;
   padding: 1rem;
 }
+
+.skillsList {
+  column-count: 2;
+  column-width: 35rem;
+  margin-top: 5px;
+  align-items: start;
+  justify-content: center;
+}
+
+.list-group-item {
+  border: 0px !important;
+  max-width: 20rem !important;
+  display: flex !important;
+  align-items: flex-start !important;
+}
+
+li {
+  list-style-position: inside !important;
+}
+
+.skillGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badges {
+  justify-content: space-around;
+}
