@@ -105,15 +105,19 @@ body {
 }
 
 .gel {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 450px;
   object-fit: cover;
 }
 
 .aboutme {
   font-size: 23px;
-  line-height: 2rem;
-  padding: 1rem;
+  line-height: 3rem;
+  padding: 3rem;
+  justify-content: end;
+}
+
+.about {
 }
 
 .skillGroup {
