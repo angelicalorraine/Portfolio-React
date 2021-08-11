@@ -17,7 +17,7 @@ export default function Resume() {
                     <div className="skillsList">
                         <ListGroup className="">
                             {skills.map(item => (
-                                <ListGroup.Item className=""><li>{item} </li></ListGroup.Item>
+                                <ListGroup.Item key={item.id} className=""><li>{item} </li></ListGroup.Item>
 
                             ))}
 

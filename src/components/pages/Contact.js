@@ -1,97 +1,94 @@
 import React from 'react';
 import { useState } from 'react';
-import { checkPassword, validateEmail } from '../utils/helpers';
+import { validateEmail } from '../utils/helpers';
+import "../styles/home.css";
 
 export default function Contact() {
 
-    const [email, setEmail] = useState('');
-    const [userName, setUserName] = useState('');
-    const [password, setPassword] = useState('');
+    const [formState, setFormState] = useState({
+        name: '',
+        email: '',
+        message: '',
+    });
+
     const [errorMessage, setErrorMessage] = useState('');
+    const { name, email, message } = formState;
 
-    const handleInputChange = (e) => {
-
-        const { target } = e;
-        const inputType = target.name;
-        const inputValue = target.value;
-
-        if (inputType === 'email') {
-            setEmail(inputValue);
-        } else if (inputType === 'userName') {
-            setUserName(inputValue);
-        } else {
-            setPassword(inputValue);
+    const handleFormSubmit = (e) => {
+        e.preventDefault();
+        if (!errorMessage) {
+            console.log('Submit Form', formState);
         }
     };
 
-    const handleFormSubmit = (e) => {
-
-        e.preventDefault();
-
-        if (!validateEmail(email) || !userName) {
-            setErrorMessage('Email or username is invalid');
-
-            return;
-
+    const handleInputChange = (e) => {
+        if (e.target.name === 'email') {
+            const isValid = validateEmail(e.target.value);
+            if (!isValid) {
+                setErrorMessage('Your email is required.');
+            } else {
+                setErrorMessage('');
+            }
+        } else {
+            if (!e.target.value.length) {
+                setErrorMessage(`${e.target.name} is required.`);
+            } else {
+                setErrorMessage('');
+            }
         }
-        if (!checkPassword(password)) {
-            setErrorMessage(
-                `Choose a more secure password for the account: ${userName}`
-            );
-            return;
+        if (!errorMessage) {
+            setFormState({ ...formState, [e.target.name]: e.target.value });
+            console.log('Handle Form', formState);
         }
-        alert(`Hello ${userName}`);
-
-        setUserName('');
-        setPassword('');
-        setEmail('');
     };
 
     return (
         <div className="pages container-fluid d-flex justify-content-center flex-column">
             <h2> Contact Info</h2>
-            <div className="form col-md-6 shadow-lg pt-4 m-5">
-                <form className="p-3 mr-2">
-                    <div className="form-group">
+            <div className="d-flex justify-content-center">
+                <div className="form col-md-6 shadow-lg pt-4 m-5">
+                    <form className="p-3 mr-2">
+                        <div className="form-group">
 
-                        <div className="form-row mb-2">
+                            <div className="form-row mb-2">
 
-                            <input
-                                className="input-group form-control"
-                                value={userName}
-                                name="userName"
-                                onChange={handleInputChange}
-                                type="text"
-                                placeholder="Name"
-                            />
+                                <input
+                                    className="input-group form-control"
+                                    value={name}
+                                    name="Name"
+                                    onBlur={handleInputChange}
+                                    type="text"
+                                    placeholder="Name"
+                                />
 
-                        </div>
-                        <div className="form-row mb-2">
-                            <input
-                                className="input-group form-control"
-                                value={email}
-                                name="email"
-                                onChange={handleInputChange}
-                                type="email"
-                                placeholder="Email"
-                            />
-                        </div>
-
-                        <div className="form-row mb-2">
-                            <div className="input-group">
-                                <textarea className="form-control" placeholder="Message" aria-label="With textarea"></textarea>
                             </div>
-                        </div>
+                            <div className="form-row mb-2">
+                                <input
+                                    className="input-group form-control"
+                                    value={email}
+                                    name="email"
+                                    onBlur={handleInputChange}
+                                    type="email"
+                                    placeholder="Email"
+                                />
+                            </div>
 
-                        <button className=" btn btn-outline-info" type="button" onClick={handleFormSubmit}>Submit</button>
-                    </div>
-                </form>
-                {errorMessage && (
-                    <div>
-                        <p className="error-text">{errorMessage}</p>
-                    </div>
-                )}
+                            <div className="form-row mb-2">
+                                <div className="input-group">
+                                    <textarea className="form-control" defaultValue={message} placeholder="Message" onBlur={handleInputChange} ></textarea>
+                                </div>
+                            </div>
+
+                            <button className=" btn btn-outline-info" type="button" onClick={handleFormSubmit}>Submit</button>
+                        </div>
+                    </form>
+                    {errorMessage && (
+                        <div >
+                            <p className="error-text">{errorMessage}</p>
+                        </div>
+                    )}
+                </div>
             </div>
-        </div>
+        </div >
     );
 }

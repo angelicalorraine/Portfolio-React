@@ -75,47 +75,53 @@ export default function Project() {
 
 
 
-            <div className="container-fluid d-flex justify-content-center ">
-                <div className="row row-cols-md-2 g-4">
-                    <Card style={{ width: '20rem' }}>
-                        <Card.Img variant="top" className="card-img-top img-thumbnail" src={budget} />
-                        <Card.Body>
-                            <Card.Title>Budget Tracker</Card.Title>
+            <div className=" container d-flex justify-content-center ">
+                <div className="row row-cols-1 row-cols-lg-4 g-4 flex-wrap">
+                    <div className="col">
+                        <Card style={{ height: '100%', alignItems: 'center' }}>
+                            <Card.Img variant="top" className="card-img-top img-thumbnail" src={budget} />
+                            <Card.Body>
+                                <Card.Title>Budget Tracker</Card.Title>
 
-                            <Button variant="outline-info"> <a href="https://github.com/angelicalorraine/Budget-Tracker" target="_blank">Repository</a></Button>
-                            <Button variant="outline-info"> <a href="https://budget-tracker-alh.herokuapp.com/" target="_blank">Launch</a></Button>
-                        </Card.Body>
-                    </Card>
+                                <Button variant="outline-info"> <a href="https://github.com/angelicalorraine/Budget-Tracker" target="_blank">Repository</a></Button>
+                                <Button variant="outline-info"> <a href="https://budget-tracker-alh.herokuapp.com/" target="_blank">Launch</a></Button>
+                            </Card.Body>
+                        </Card>
+                    </div>
+                    <div className="col">
+                        <Card style={{ height: '100%', alignItems: 'center' }}>
+                            <Card.Img variant="top" className="card-img-top img-thumbnail" src={note} />
+                            <Card.Body>
+                                <Card.Title>Note Taker</Card.Title>
 
-                    <Card style={{ width: '20rem' }}>
-                        <Card.Img variant="top" className="card-img-top img-thumbnail" src={note} />
-                        <Card.Body>
-                            <Card.Title>Budget Tracker</Card.Title>
+                                <Button variant="outline-info"> <a href="https://github.com/angelicalorraine/Note-Taker" target="_blank">Repository</a></Button>
+                                <Button variant="outline-info"> <a href="https://note-taker-alh.herokuapp.com/" target="_blank">Launch</a></Button>
+                            </Card.Body>
+                        </Card>
+                    </div>
+                    <div className="col">
+                        <Card style={{ height: '100%', alignItems: 'center' }}>
+                            <Card.Img variant="top" className="card-img-top img-thumbnail" src={fitness} />
+                            <Card.Body>
+                                <Card.Title>Fitness Tracker</Card.Title>
 
-                            <Button variant="outline-info"> <a href="https://github.com/angelicalorraine/Budget-Tracker" target="_blank">Repository</a></Button>
-                            <Button variant="outline-info"> <a href="https://budget-tracker-alh.herokuapp.com/" target="_blank">Launch</a></Button>
-                        </Card.Body>
-                    </Card>
+                                <Button variant="outline-info"> <a href="https://github.com/angelicalorraine/Workout-Tracker" target="_blank">Repository</a></Button>
+                                <Button variant="outline-info"> <a href="https://workout-tracker-alh.herokuapp.com/" target="_blank">Launch</a></Button>
+                            </Card.Body>
+                        </Card>
+                    </div>
 
-                    <Card style={{ width: '20rem' }}>
-                        <Card.Img variant="top" className="card-img-top img-thumbnail" src={fitness} />
-                        <Card.Body>
-                            <Card.Title>Budget Tracker</Card.Title>
+                    <div className="col">
+                        <Card style={{ height: '100%', alignItems: 'center' }}>
+                            <Card.Img variant="top" className="card-img-top img-thumbnail" src={team} />
+                            <Card.Body>
+                                <Card.Title>Team Generator</Card.Title>
 
-                            <Button variant="outline-info"> <a href="https://github.com/angelicalorraine/Budget-Tracker" target="_blank">Repository</a></Button>
-                            <Button variant="outline-info"> <a href="https://budget-tracker-alh.herokuapp.com/" target="_blank">Launch</a></Button>
-                        </Card.Body>
-                    </Card>
-
-                    <Card style={{ width: '20rem' }}>
-                        <Card.Img variant="top" className="card-img-top img-thumbnail" src={team} />
-                        <Card.Body>
-                            <Card.Title>Budget Tracker</Card.Title>
-
-                            <Button variant="outline-info"> <a href="https://github.com/angelicalorraine/Budget-Tracker" target="_blank">Repository</a></Button>
-                            <Button variant="outline-info"> <a href="https://budget-tracker-alh.herokuapp.com/" target="_blank">Launch</a></Button>
-                        </Card.Body>
-                    </Card>
+                                <Button variant="outline-info"> <a href="https://github.com/angelicalorraine/Team-Profile-Generator" target="_blank">Repository</a></Button>
+                                <Button variant="outline-info"> <a href="https://angelicalorraine.github.io/Team-Profile-Generator/" target="_blank">Launch</a></Button>
+                            </Card.Body>
+                        </Card>
+                    </div>
 
                 </div>
 

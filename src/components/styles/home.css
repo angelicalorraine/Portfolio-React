@@ -74,7 +74,8 @@ h2 {
 }
 
 .container {
-  max-width: 1140px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .mainBody {
@@ -142,4 +143,8 @@ li {
 
 .badges {
   justify-content: space-around;
+}
+
+.error-text {
+  color: red;
 }
