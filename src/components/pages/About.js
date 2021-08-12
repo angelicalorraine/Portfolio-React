@@ -8,7 +8,7 @@ export default function About() {
 
 
 
-            <div className="container justify-content-center ">
+            <div className="row justify-content-center ">
                 <div className="leftmain col-sm" > <img className="gel" src={gel} ></img></div>
 
                 <div className="rightmain col-sm mt-5" >
