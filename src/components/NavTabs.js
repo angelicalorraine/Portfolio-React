@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header ">
         <Home />
 
         <ul className="nav nav-tabs">

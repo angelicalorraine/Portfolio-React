@@ -8,10 +8,10 @@ export default function About() {
 
 
 
-            <div className="d-flex flex-wrap justify-content-center ">
-                <div className="leftmain flex-shrink-1" > <img className="gel" src={gel} ></img></div>
+            <div className="container justify-content-center ">
+                <div className="leftmain col-sm" > <img className="gel" src={gel} ></img></div>
 
-                <div className="rightmain flex-shrink-1 mt-5" >
+                <div className="rightmain col-sm mt-5" >
 
                     <p className="aboutme"> I am a passionate Full Stack Web Developer with a vast array of knowledge in many different front end and back end languages, responsive frameworks, databases, and best code practices. I am dedicated and eager to continue to learn, improve and update my skill set and problem solving techniques. I look forward to continuously gaining knowledge from my peers and work collaboratively with others while being able to contribute to the technology industry.</p>
                     <div className="d-flex flex-row flex-wrap justify-content-center">

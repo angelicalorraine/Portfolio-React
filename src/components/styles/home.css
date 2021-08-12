@@ -116,22 +116,6 @@ body {
   justify-content: end;
 }
 
-.leftmain {
-  display: flex;
-
-  align-items: center;
-}
-
-/* Personal information*/
-
-.rightmain {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 2rem;
-}
-
 .skillGroup {
   display: flex;
   justify-content: center !important;
