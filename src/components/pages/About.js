@@ -9,11 +9,12 @@ export default function About() {
 
 
             <div className="row justify-content-center ">
-                <div className="leftmain col-sm" > <img className="gel" src={gel} ></img></div>
+                <div className="leftmain col-sm-auto" > <img className="gel" src={gel} ></img></div>
 
                 <div className="rightmain col-sm mt-5" >
-
-                    <p className="aboutme"> I am a passionate Full Stack Web Developer with a vast array of knowledge in many different front end and back end languages, responsive frameworks, databases, and best code practices. I am dedicated and eager to continue to learn, improve and update my skill set and problem solving techniques. I look forward to continuously gaining knowledge from my peers and work collaboratively with others while being able to contribute to the technology industry.</p>
+                    <div className="d-flex justify-content-center">
+                        <p className="aboutme"> I am a passionate Full Stack Web Developer with a vast array of knowledge in many different front end and back end languages, responsive frameworks, databases, and best code practices. I am dedicated and eager to continue to learn, improve and update my skill set and problem solving techniques. I look forward to continuously gaining knowledge from my peers and work collaboratively with others while being able to contribute to the technology industry.</p>
+                    </div>
                     <div className="d-flex flex-row flex-wrap justify-content-center">
 
                         <div> <img className="cr-standard-grid-item-content__image" src="https://images.credly.com/size/250x250/images/109b65a3-b8c5-4802-95a4-3db2f1e5ef3a/6f5fb490753026eb192a66509fe7332c.png" width="200" alt="" height="200"></img></div>
