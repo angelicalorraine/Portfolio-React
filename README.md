@@ -2,11 +2,11 @@
 
 My portfolio will showcase
 
-- Projects,
-- Assignmentsa
+- Projects
+- Assignments
 - Skills
 - Services
-  Follow along as I update and create new fun applications!
+  Follow along as I update and create new innovative applications!
 
 ## About Me
 
