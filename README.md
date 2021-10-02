@@ -16,6 +16,5 @@ My portfolio will showcase
 
 ### [Visit Me Here!](https://angelicalorraine.github.io/Portfolio-React/)
 
-### [Download My Resume](AngelicaHernandezResume.pdf)
 
-![MyPortfolio](./Images/AngelicasPortf.png)
+
